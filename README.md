@@ -2,6 +2,8 @@
 
 for personal test for api gateway
 
+平台以VertX为基础进行制作。
+
 目标：
 
   1.API注册，支持Swagger\OpenAPI
