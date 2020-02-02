@@ -31,8 +31,8 @@ public class MainVerticle extends AbstractVerticle {
               }
             });
 
-    vertx.deployVerticle(new Test1Verticle());
-    vertx.deployVerticle(new Test2Verticle());
+    // vertx.deployVerticle(new Test1Verticle());
+    // vertx.deployVerticle(new Test2Verticle());
   }
 
 }
