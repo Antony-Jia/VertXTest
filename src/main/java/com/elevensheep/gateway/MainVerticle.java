@@ -26,8 +26,10 @@ public class MainVerticle extends AbstractVerticle {
             re -> {
               if (re.succeeded()) {
                 logger.info("started sucess");
+                startPromise.complete();
               } else {
                 logger.error("wrong");
+                startPromise.fail("error");
               }
             });
 
