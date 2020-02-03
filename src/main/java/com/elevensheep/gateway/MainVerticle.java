@@ -1,15 +1,15 @@
 package com.elevensheep.gateway;
 
+import com.elevensheep.gateway.manage.ManageVerticle;
 import io.vertx.core.AbstractVerticle;
 import io.vertx.core.DeploymentOptions;
 import io.vertx.core.Promise;
 import io.vertx.core.json.JsonObject;
-
-import com.elevensheep.gateway.test.Test1Verticle;
-import com.elevensheep.gateway.test.Test2Verticle;
-
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+
+
+
 
 public class MainVerticle extends AbstractVerticle {
 
@@ -25,15 +25,17 @@ public class MainVerticle extends AbstractVerticle {
                 new JsonObject().put("api.gateway.http.address", "localhost").put("api.gateway.http.port", 8788)),
             re -> {
               if (re.succeeded()) {
-                logger.info("started sucess");
-                startPromise.complete();
+                vertx.deployVerticle(new ManageVerticle(), manage->{
+                  startPromise.complete();
+                  logger.info("started sucess");
+                });
               } else {
                 logger.error("wrong");
                 startPromise.fail("error");
               }
             });
 
-    // vertx.deployVerticle(new Test1Verticle());
+    
     // vertx.deployVerticle(new Test2Verticle());
   }
 
