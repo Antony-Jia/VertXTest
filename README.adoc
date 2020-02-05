@@ -1,31 +1,33 @@
-= Gateway
+# VertXTest
 
-image:https://img.shields.io/badge/vert.x-4.0.0-SNAPSHOT-purple.svg[link="https://vertx.io"]
+for personal test for api gateway
 
-This application was generated using http://start.vertx.io
+平台以VertX为基础进行制作。
 
-== Building
+目标：
 
-To launch your tests:
-```
-./mvnw clean test
-```
-
-To package your application:
-```
-./mvnw clean package
-```
-
-To run your application:
-```
-./mvnw clean compile exec:java
-```
-
-== Help
-
-* https://vertx.io/docs/[Vert.x Documentation]
-* https://stackoverflow.com/questions/tagged/vert.x?sort=newest&pageSize=15[Vert.x Stack Overflow]
-* https://groups.google.com/forum/?fromgroups#!forum/vertx[Vert.x User Group]
-* https://gitter.im/eclipse-vertx/vertx-users[Vert.x Gitter]
-
-
+  1.API注册，支持Swagger\OpenAPI
+  
+  2.协议转换，优先级低
+  
+  3.服务发现，采用Vert.X的服务发现机制
+  
+  4.服务调用
+  
+  5.优雅下线
+  
+  6.性能测试
+  
+  7.缓存
+  
+  8.限流、降级
+  
+  9.熔断降级
+  
+  10.日志
+  
+  11.网关管控平台，负责网关监控与统计
+  
+  12.camel网关治理集成
+ 
+ 
