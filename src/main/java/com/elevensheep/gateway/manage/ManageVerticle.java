@@ -1,15 +1,19 @@
 package com.elevensheep.gateway.manage;
 
+import com.elevensheep.gateway.manage.service.ManageService;
+import com.elevensheep.gateway.manage.serviceImpl.ManageServiceImpl;
 import io.vertx.core.AbstractVerticle;
 import io.vertx.core.Promise;
 import io.vertx.core.eventbus.EventBus;
 import io.vertx.core.eventbus.MessageConsumer;
 import io.vertx.mysqlclient.MySQLConnectOptions;
 import io.vertx.mysqlclient.MySQLPool;
+import io.vertx.serviceproxy.ServiceBinder;
 import io.vertx.sqlclient.PoolOptions;
 import io.vertx.sqlclient.Row;
 import io.vertx.sqlclient.RowSet;
 import io.vertx.sqlclient.Tuple;
+
 
 public class ManageVerticle extends AbstractVerticle {
 
@@ -27,6 +31,10 @@ public class ManageVerticle extends AbstractVerticle {
         client = MySQLPool.pool(vertx, connectOptions, poolOptions);
 
         eventBus = vertx.eventBus();
+
+        ManageService manageService = new ManageServiceImpl();
+
+        new ServiceBinder(vertx).setAddress("manage-sql-service").register(ManageService.class, manageService);
 
         MessageConsumer<String> consumer = eventBus.consumer("api.manange.paths");
         consumer.handler(message -> {
