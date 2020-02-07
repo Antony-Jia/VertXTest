@@ -33,7 +33,7 @@ public class ManageVerticle extends AbstractVerticle {
         eventBus = vertx.eventBus();
 
         ManageService manageService = new ManageServiceImpl();
-
+        //add event bus
         new ServiceBinder(vertx).setAddress("manage-sql-service").register(ManageService.class, manageService);
 
         MessageConsumer<String> consumer = eventBus.consumer("api.manange.paths");
