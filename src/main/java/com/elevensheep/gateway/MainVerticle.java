@@ -4,9 +4,13 @@ import com.elevensheep.gateway.manage.ManageVerticle;
 import io.vertx.core.AbstractVerticle;
 import io.vertx.core.DeploymentOptions;
 import io.vertx.core.Promise;
+import io.vertx.core.eventbus.EventBus;
 import io.vertx.core.json.JsonObject;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+
+
+
 
 
 
@@ -18,7 +22,7 @@ public class MainVerticle extends AbstractVerticle {
   @Override
   public void start(Promise<Void> startPromise) throws Exception {
     super.start();
-
+    EventBus eBus = vertx.eventBus();
     vertx
         .deployVerticle("com.elevensheep.gateway.gateway.GatewayVerticle",
             new DeploymentOptions().setInstances(1).setConfig(
@@ -36,7 +40,8 @@ public class MainVerticle extends AbstractVerticle {
             });
 
     
-    // vertx.deployVerticle(new Test2Verticle());
+    //  vertx.deployVerticle(new Test2Verticle());
+    //  vertx.deployVerticle(new Test1Verticle());
   }
 
 }

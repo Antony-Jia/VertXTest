@@ -1,87 +1,87 @@
 package com.elevensheep.gateway.manage.service;
 
+import io.vertx.codegen.annotations.DataObject;
+import io.vertx.core.json.JsonObject;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 
-import io.vertx.codegen.annotations.DataObject;
-import io.vertx.core.json.JsonObject;
 
 @DataObject(generateConverter = true)
 public class Manage {
-    private String payId;
-    private Double payAmount;
-    private Short paySource;
-    private Long ManageTime;
+    private String Id;
+    private String host;
+    private String url;
+    private String userId;
 
     public Manage() {
         // Empty constructor
     }
 
     public Manage(JsonObject json) {
-        // ManageConverter.fromJson(json, this);
+        ManageConverter.fromJson(json, this);
     }
 
     public Manage(Manage other) {
-        this.payId = other.payId;
-        this.payAmount = other.payAmount;
-        this.paySource = other.paySource;
-        this.ManageTime = other.ManageTime;
+        this.Id = other.Id;
+        this.host = other.host;
+        this.url = other.url;
+        this.userId = other.userId;
     }
 
     public JsonObject toJson() {
         JsonObject json = new JsonObject();
-        // ManageConverter.toJson(this, json);
+        ManageConverter.toJson(this, json);
         return json;
     }
 
-    public Manage(Long payCounter, Double payAmount, Short paySource) {
+    public Manage(int payCounter, String host, String url) {
         initId(payCounter);
-        this.payAmount = payAmount;
-        this.paySource = paySource;
-        this.ManageTime = System.currentTimeMillis();
+        this.host = host;
+        this.url = url;
+        //this.userId = System.currentTimeMillis();
     }
 
-    public String getPayId() {
-        return payId;
+    public String getId() {
+        return Id;
     }
 
-    public Manage setPayId(String payId) {
-        this.payId = payId;
+    public Manage setId(String Id) {
+        this.Id = Id;
         return this;
     }
 
-    public Double getPayAmount() {
-        return payAmount;
+    public String gethost() {
+        return host;
     }
 
-    public Manage setPayAmount(Double payAmount) {
-        this.payAmount = payAmount;
+    public Manage sethost(String host) {
+        this.host = host;
         return this;
     }
 
-    public Short getPaySource() {
-        return paySource;
+    public String geturl() {
+        return url;
     }
 
-    public Manage setPaySource(Short paySource) {
-        this.paySource = paySource;
+    public Manage seturl(String url) {
+        this.url = url;
         return this;
     }
 
-    public Long getManageTime() {
-        return ManageTime;
+    public String getuserId() {
+        return userId;
     }
 
-    public Manage setManageTime(Long ManageTime) {
-        this.ManageTime = ManageTime;
+    public Manage setuserId(String userId) {
+        this.userId = userId;
         return this;
     }
 
-    void initId(Long counter) {
+    void initId(int counter) {
         if (counter < 0) {
             throw new IllegalStateException("Negative counter");
         }
-        if (this.payId != null && !this.payId.equals("")) {
+        if (this.Id != null && !this.Id.equals("")) {
             DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyyMMdd");
             String datePrefix = LocalDate.now().format(formatter);
             int mod = 12 - (int) Math.sqrt(counter);
@@ -90,7 +90,7 @@ public class Manage {
                 zeroChars[i] = '0';
             }
             String zs = new String(zeroChars);
-            this.payId = datePrefix + zs + counter;
+            this.Id = datePrefix + zs + counter;
         }
     }
 

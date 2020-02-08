@@ -1,25 +1,26 @@
 package com.elevensheep.gateway.gateway;
 
-import io.netty.handler.codec.http.HttpRequest;
+import com.elevensheep.gateway.manage.service.ManageService;
 import io.vertx.circuitbreaker.CircuitBreaker;
 import io.vertx.circuitbreaker.CircuitBreakerOptions;
 import io.vertx.core.AbstractVerticle;
-import io.vertx.core.Future;
 import io.vertx.core.Promise;
 import io.vertx.core.http.HttpClient;
 import io.vertx.core.http.HttpClientRequest;
 import io.vertx.core.http.HttpClientResponse;
 import io.vertx.core.http.HttpServerOptions;
 import io.vertx.core.http.HttpServerResponse;
-import io.vertx.core.http.RequestOptions;
+import io.vertx.core.json.JsonArray;
 import io.vertx.core.json.JsonObject;
-import io.vertx.core.net.SocketAddress;
 import io.vertx.ext.web.Router;
 import io.vertx.ext.web.RoutingContext;
 import io.vertx.ext.web.handler.BodyHandler;
 import io.vertx.ext.web.handler.StaticHandler;
+import io.vertx.serviceproxy.ServiceProxyBuilder;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+
+
 
 public class GatewayVerticle extends AbstractVerticle {
 
@@ -27,10 +28,14 @@ public class GatewayVerticle extends AbstractVerticle {
 
     private CircuitBreaker circuitBreaker;
     private HttpClient httpclient;
-
+    private ManageService service;
     @Override
     public void start(Promise<Void> startPromise) throws Exception {
         super.start();
+
+        ServiceProxyBuilder builder = new ServiceProxyBuilder(vertx).setAddress("manage-sql-service");
+
+        this.service = builder.build(ManageService.class);
 
         circuitBreaker = CircuitBreaker.create("my-circuit-breaker", vertx,
                 new CircuitBreakerOptions().setMaxFailures(5) // number of failure before opening the circuit
@@ -85,14 +90,23 @@ public class GatewayVerticle extends AbstractVerticle {
         int initialOffset = 5; // length of '/api'
 
         String path = context.request().uri();
-        logger.debug(path);
+        logger.debug("dispatch" + path);
         circuitBreaker.execute(future -> {
             String prefix = (path.substring(initialOffset).split("/"))[0];
             String newPath = path.substring(initialOffset + prefix.length());
             logger.debug(prefix);
             logger.debug(newPath);
-            String pathtm = "http://localhost:8888";
-            doDispatch(context, pathtm, httpclient, future);
+            this.service.retrieveManage(prefix, resultHandler->{
+                if(resultHandler.succeeded()){
+                    JsonArray jsonArray = resultHandler.result();
+                    doDispatch(context, jsonArray.getJsonObject(0).getString("url"), httpclient, future);
+                }
+                else{
+
+                }
+
+            });
+            
 
         }).setHandler(ar -> {
             if (ar.failed()) {

@@ -1,12 +1,11 @@
 package com.elevensheep.gateway.manage.service;
 
-import java.util.List;
 import io.vertx.codegen.annotations.Fluent;
 import io.vertx.codegen.annotations.ProxyGen;
 import io.vertx.codegen.annotations.VertxGen;
 import io.vertx.core.AsyncResult;
 import io.vertx.core.Handler;
-import io.vertx.core.json.JsonObject;
+import io.vertx.core.json.JsonArray;
 
 @VertxGen
 @ProxyGen
@@ -35,9 +34,12 @@ public interface ManageService {
     public ManageService addManage(Manage Manage, Handler<AsyncResult<Void>> resultHandler);
 
     /**
-     * Retrieve the Manage with certain `ManageId`.
+     * Retrieve the Manage with certain `url`.
      */
     @Fluent
-    public ManageService retrieveManage(String ManageId, Handler<AsyncResult<JsonObject>> resultHandler);
+    public ManageService retrieveManage(String name, Handler<AsyncResult<JsonArray>> resultHandler);
+
+    @Fluent
+    public ManageService retrieveAllManage(Handler<AsyncResult<JsonArray>> resultHandler);
 
 }
