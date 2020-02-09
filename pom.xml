@@ -73,6 +73,16 @@
       <artifactId>vertx-service-proxy</artifactId>
     </dependency>
 
+    <dependency>
+      <groupId>io.vertx</groupId>
+      <artifactId>vertx-redis-client</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>io.vertx</groupId>
+      <artifactId>vertx-web-graphql</artifactId>
+    </dependency>
+
 
     <!-- log4j2 日志配置-->
     <dependency>

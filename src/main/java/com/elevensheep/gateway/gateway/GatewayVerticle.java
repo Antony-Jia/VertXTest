@@ -102,7 +102,7 @@ public class GatewayVerticle extends AbstractVerticle {
                     doDispatch(context, jsonArray.getJsonObject(0).getString("url"), httpclient, future);
                 }
                 else{
-
+                    future.fail("not found");
                 }
 
             });
@@ -143,6 +143,7 @@ public class GatewayVerticle extends AbstractVerticle {
                 logger.debug("message failed");
                 logger.debug(response.cause().getMessage());
             }
+            client.close();
         });
 
         // set headers
