@@ -1,13 +1,19 @@
 package com.elevensheep.gateway;
 
 import com.elevensheep.gateway.manage.ManageVerticle;
+import com.elevensheep.gateway.test.Test1Verticle;
+import com.elevensheep.gateway.test.Test2Verticle;
 import io.vertx.core.AbstractVerticle;
+import io.vertx.core.CompositeFuture;
 import io.vertx.core.DeploymentOptions;
+import io.vertx.core.Future;
 import io.vertx.core.Promise;
 import io.vertx.core.eventbus.EventBus;
 import io.vertx.core.json.JsonObject;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.core.Filter.Result;
+
 
 
 
@@ -40,7 +46,13 @@ public class MainVerticle extends AbstractVerticle {
             });
 
     
-    //  vertx.deployVerticle(new Test2Verticle());
+    Future<String> f2 =   vertx.deployVerticle(new Test2Verticle());
+    Future<String> f1 =   vertx.deployVerticle(new Test1Verticle());
+
+    CompositeFuture.all(f1, f2).setHandler(result -> {
+      // business as usual
+      logger.debug(Result.values());
+    });
     //  vertx.deployVerticle(new Test1Verticle());
   }
 
