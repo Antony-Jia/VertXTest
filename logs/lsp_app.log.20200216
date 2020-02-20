@@ -1,0 +1,403 @@
+2020-01-31 20:44:21,592 DEBUG [com.elevensheep.gateway.MainVerticle] API Gateway is running on port 8787
+2020-01-31 21:42:14,952 DEBUG [com.elevensheep.gateway.MainVerticle] API Gateway is running on port 8787
+2020-02-01 15:31:37,693 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] API Gateway is running on port 8787
+2020-02-01 15:31:37,693 INFO  [com.elevensheep.gateway.MainVerticle] started sucess
+2020-02-01 15:36:07,504 INFO  [com.elevensheep.gateway.MainVerticle] started sucess
+2020-02-01 15:36:07,505 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] API Gateway is running on port 8788
+2020-02-02 14:28:27,029 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] API Gateway is running on port 8788
+2020-02-02 14:28:27,042 INFO  [com.elevensheep.gateway.MainVerticle] started sucess
+2020-02-02 14:41:41,677 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] API Gateway is running on port 8788
+2020-02-02 14:41:41,681 INFO  [com.elevensheep.gateway.MainVerticle] started sucess
+2020-02-02 14:42:15,025 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] /api/test
+2020-02-02 14:42:15,033 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] test
+2020-02-02 14:42:15,034 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] 
+2020-02-02 14:42:15,078 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] message failed
+2020-02-02 14:42:17,044 ERROR [com.elevensheep.gateway.gateway.GatewayVerticle] failerio.vertx.circuitbreaker.TimeoutException: operation timeout
+2020-02-02 14:53:12,352 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] API Gateway is running on port 8788
+2020-02-02 14:53:12,352 INFO  [com.elevensheep.gateway.MainVerticle] started sucess
+2020-02-02 14:53:40,199 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] /api/123
+2020-02-02 14:53:40,204 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] 123
+2020-02-02 14:53:40,204 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] 
+2020-02-02 14:53:40,251 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] message failed
+2020-02-02 14:53:42,213 ERROR [com.elevensheep.gateway.gateway.GatewayVerticle] failerio.vertx.circuitbreaker.TimeoutException: operation timeout
+2020-02-02 14:54:07,872 INFO  [com.elevensheep.gateway.MainVerticle] started sucess
+2020-02-02 14:54:07,874 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] API Gateway is running on port 8788
+2020-02-02 14:54:29,248 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] /api/123
+2020-02-02 14:54:29,255 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] 123
+2020-02-02 14:54:29,255 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] 
+2020-02-02 14:54:29,256 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] http://localhost:8888
+2020-02-02 14:54:29,309 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] message failed
+2020-02-02 14:54:31,262 ERROR [com.elevensheep.gateway.gateway.GatewayVerticle] failerio.vertx.circuitbreaker.TimeoutException: operation timeout
+2020-02-02 14:57:48,574 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] API Gateway is running on port 8788
+2020-02-02 14:57:48,602 INFO  [com.elevensheep.gateway.MainVerticle] started sucess
+2020-02-02 14:57:54,180 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] /api/123
+2020-02-02 14:57:54,187 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] 123
+2020-02-02 14:57:54,187 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] 
+2020-02-02 14:57:54,188 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] http://localhost:8888
+2020-02-02 14:57:54,225 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] message failed
+2020-02-02 14:57:54,225 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] Connection refused: localhost/127.0.0.1:80
+2020-02-02 14:57:56,199 ERROR [com.elevensheep.gateway.gateway.GatewayVerticle] failerio.vertx.circuitbreaker.TimeoutException: operation timeout
+2020-02-02 15:00:56,425 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] API Gateway is running on port 8788
+2020-02-02 15:00:56,428 INFO  [com.elevensheep.gateway.MainVerticle] started sucess
+2020-02-02 15:01:03,691 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] /api/123
+2020-02-02 15:01:03,698 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] 123
+2020-02-02 15:01:03,698 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] 
+2020-02-02 15:01:03,699 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] http://localhost:8888
+2020-02-02 15:04:29,264 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] API Gateway is running on port 8788
+2020-02-02 15:04:29,264 INFO  [com.elevensheep.gateway.MainVerticle] started sucess
+2020-02-02 15:04:33,315 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] /api/123
+2020-02-02 15:04:33,322 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] 123
+2020-02-02 15:04:33,322 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] 
+2020-02-02 15:04:33,322 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] http://localhost:8888
+2020-02-02 15:04:35,634 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] /api/123
+2020-02-02 15:04:35,635 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] 123
+2020-02-02 15:04:35,635 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] 
+2020-02-02 15:04:35,635 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] http://localhost:8888
+2020-02-02 15:04:43,823 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] /api/123
+2020-02-02 15:04:43,823 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] 123
+2020-02-02 15:04:43,823 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] 
+2020-02-02 15:04:43,823 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] http://localhost:8888
+2020-02-02 15:04:44,960 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] /api/123
+2020-02-02 15:04:44,960 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] 123
+2020-02-02 15:04:44,961 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] 
+2020-02-02 15:04:44,961 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] http://localhost:8888
+2020-02-02 15:04:45,563 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] /api/123
+2020-02-02 15:04:45,563 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] 123
+2020-02-02 15:04:45,563 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] 
+2020-02-02 15:04:45,563 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] http://localhost:8888
+2020-02-02 15:04:45,736 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] /api/123
+2020-02-02 15:04:45,736 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] 123
+2020-02-02 15:04:45,736 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] 
+2020-02-02 15:04:45,737 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] http://localhost:8888
+2020-02-02 15:04:45,932 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] /api/123
+2020-02-02 15:04:45,932 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] 123
+2020-02-02 15:04:45,933 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] 
+2020-02-02 15:04:45,933 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] http://localhost:8888
+2020-02-02 15:04:46,090 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] /api/123
+2020-02-02 15:04:46,092 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] 123
+2020-02-02 15:04:46,092 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] 
+2020-02-02 15:04:46,093 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] http://localhost:8888
+2020-02-02 15:04:46,252 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] /api/123
+2020-02-02 15:04:46,252 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] 123
+2020-02-02 15:04:46,252 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] 
+2020-02-02 15:04:46,253 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] http://localhost:8888
+2020-02-02 15:04:46,404 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] /api/123
+2020-02-02 15:04:46,405 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] 123
+2020-02-02 15:04:46,405 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] 
+2020-02-02 15:04:46,405 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] http://localhost:8888
+2020-02-02 15:04:46,556 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] /api/123
+2020-02-02 15:04:46,556 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] 123
+2020-02-02 15:04:46,556 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] 
+2020-02-02 15:04:46,556 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] http://localhost:8888
+2020-02-02 15:04:46,716 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] /api/123
+2020-02-02 15:04:46,717 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] 123
+2020-02-02 15:04:46,717 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] 
+2020-02-02 15:04:46,718 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] http://localhost:8888
+2020-02-02 15:04:46,883 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] /api/123
+2020-02-02 15:04:46,883 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] 123
+2020-02-02 15:04:46,884 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] 
+2020-02-02 15:04:46,884 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] http://localhost:8888
+2020-02-02 15:04:47,050 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] /api/123
+2020-02-02 15:04:47,050 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] 123
+2020-02-02 15:04:47,051 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] 
+2020-02-02 15:04:47,051 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] http://localhost:8888
+2020-02-02 15:04:47,217 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] /api/123
+2020-02-02 15:04:47,218 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] 123
+2020-02-02 15:04:47,218 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] 
+2020-02-02 15:04:47,219 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] http://localhost:8888
+2020-02-02 15:04:47,380 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] /api/123
+2020-02-02 15:04:47,380 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] 123
+2020-02-02 15:04:47,381 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] 
+2020-02-02 15:04:47,381 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] http://localhost:8888
+2020-02-02 15:04:47,551 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] /api/123
+2020-02-02 15:04:47,551 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] 123
+2020-02-02 15:04:47,551 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] 
+2020-02-02 15:04:47,552 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] http://localhost:8888
+2020-02-02 15:04:47,730 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] /api/123
+2020-02-02 15:04:47,731 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] 123
+2020-02-02 15:04:47,731 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] 
+2020-02-02 15:04:47,731 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] http://localhost:8888
+2020-02-02 15:04:47,900 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] /api/123
+2020-02-02 15:04:47,900 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] 123
+2020-02-02 15:04:47,900 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] 
+2020-02-02 15:04:47,901 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] http://localhost:8888
+2020-02-02 15:04:48,068 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] /api/123
+2020-02-02 15:04:48,068 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] 123
+2020-02-02 15:04:48,068 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] 
+2020-02-02 15:04:48,068 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] http://localhost:8888
+2020-02-02 15:04:48,233 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] /api/123
+2020-02-02 15:04:48,233 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] 123
+2020-02-02 15:04:48,234 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] 
+2020-02-02 15:04:48,234 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] http://localhost:8888
+2020-02-02 15:04:48,422 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] /api/123
+2020-02-02 15:04:48,423 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] 123
+2020-02-02 15:04:48,423 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] 
+2020-02-02 15:04:48,423 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] http://localhost:8888
+2020-02-02 15:04:48,601 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] /api/123
+2020-02-02 15:04:48,602 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] 123
+2020-02-02 15:04:48,602 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] 
+2020-02-02 15:04:48,602 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] http://localhost:8888
+2020-02-02 15:04:48,769 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] /api/123
+2020-02-02 15:04:48,769 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] 123
+2020-02-02 15:04:48,770 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] 
+2020-02-02 15:04:48,771 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] http://localhost:8888
+2020-02-02 15:04:48,953 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] /api/123
+2020-02-02 15:04:48,953 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] 123
+2020-02-02 15:04:48,954 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] 
+2020-02-02 15:04:48,954 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] http://localhost:8888
+2020-02-02 15:04:49,126 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] /api/123
+2020-02-02 15:04:49,127 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] 123
+2020-02-02 15:04:49,127 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] 
+2020-02-02 15:04:49,127 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] http://localhost:8888
+2020-02-02 15:04:49,287 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] /api/123
+2020-02-02 15:04:49,288 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] 123
+2020-02-02 15:04:49,288 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] 
+2020-02-02 15:04:49,288 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] http://localhost:8888
+2020-02-02 15:04:49,466 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] /api/123
+2020-02-02 15:04:49,466 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] 123
+2020-02-02 15:04:49,466 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] 
+2020-02-02 15:04:49,467 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] http://localhost:8888
+2020-02-02 15:04:49,635 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] /api/123
+2020-02-02 15:04:49,636 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] 123
+2020-02-02 15:04:49,636 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] 
+2020-02-02 15:04:49,636 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] http://localhost:8888
+2020-02-02 15:04:49,800 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] /api/123
+2020-02-02 15:04:49,801 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] 123
+2020-02-02 15:04:49,801 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] 
+2020-02-02 15:04:49,801 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] http://localhost:8888
+2020-02-02 15:06:22,800 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] API Gateway is running on port 8788
+2020-02-02 15:06:22,805 INFO  [com.elevensheep.gateway.MainVerticle] started sucess
+2020-02-02 15:16:38,272 INFO  [com.elevensheep.gateway.MainVerticle] started sucess
+2020-02-02 15:16:38,272 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] API Gateway is running on port 8788
+2020-02-02 15:20:18,315 INFO  [com.elevensheep.gateway.MainVerticle] started sucess
+2020-02-02 15:20:18,315 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] API Gateway is running on port 8788
+2020-02-02 15:21:17,513 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] API Gateway is running on port 8788
+2020-02-02 15:21:17,513 INFO  [com.elevensheep.gateway.MainVerticle] started sucess
+2020-02-02 15:21:31,844 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] API Gateway is running on port 8788
+2020-02-02 15:21:31,844 INFO  [com.elevensheep.gateway.MainVerticle] started sucess
+2020-02-02 15:24:47,467 INFO  [com.elevensheep.gateway.MainVerticle] started sucess
+2020-02-02 15:24:47,467 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] API Gateway is running on port 8788
+2020-02-03 07:23:30,110 INFO  [com.elevensheep.gateway.MainVerticle] started sucess
+2020-02-03 07:23:30,111 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] API Gateway is running on port 8788
+2020-02-03 07:23:49,067 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] /api/123
+2020-02-03 07:23:49,086 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] 123
+2020-02-03 07:23:49,086 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] 
+2020-02-03 07:24:58,159 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] http://localhost:8888
+2020-02-03 07:24:58,234 ERROR [com.elevensheep.gateway.gateway.GatewayVerticle] failerio.vertx.circuitbreaker.TimeoutException: operation timeout
+2020-02-03 07:24:58,542 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] message failed
+2020-02-03 07:24:58,543 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] Connection refused: localhost/127.0.0.1:8888
+2020-02-03 07:25:26,784 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] /api/123
+2020-02-03 07:25:26,785 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] 123
+2020-02-03 07:25:26,785 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] 
+2020-02-03 07:25:29,371 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] http://localhost:8888
+2020-02-03 07:25:29,377 ERROR [com.elevensheep.gateway.gateway.GatewayVerticle] failerio.vertx.circuitbreaker.TimeoutException: operation timeout
+2020-02-03 07:25:29,378 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] message failed
+2020-02-03 07:25:29,378 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] Connection refused: localhost/127.0.0.1:8888
+2020-02-03 22:02:37,107 INFO  [com.elevensheep.gateway.MainVerticle] started sucess
+2020-02-03 22:02:37,107 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] API Gateway is running on port 8788
+2020-02-03 22:03:17,004 INFO  [com.elevensheep.gateway.MainVerticle] started sucess
+2020-02-03 22:03:17,004 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] API Gateway is running on port 8788
+2020-02-03 22:04:14,309 INFO  [com.elevensheep.gateway.MainVerticle] started sucess
+2020-02-03 22:04:14,310 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] API Gateway is running on port 8788
+2020-02-03 22:06:05,330 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] API Gateway is running on port 8788
+2020-02-03 22:06:05,354 INFO  [com.elevensheep.gateway.MainVerticle] started sucess
+2020-02-03 22:06:22,579 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] API Gateway is running on port 8788
+2020-02-03 22:06:22,579 INFO  [com.elevensheep.gateway.MainVerticle] started sucess
+2020-02-03 22:07:40,003 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] API Gateway is running on port 8788
+2020-02-03 22:07:40,007 INFO  [com.elevensheep.gateway.MainVerticle] started sucess
+2020-02-03 22:11:25,228 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] API Gateway is running on port 8788
+2020-02-03 22:12:32,762 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] API Gateway is running on port 8788
+2020-02-03 22:12:32,994 INFO  [com.elevensheep.gateway.MainVerticle] started sucess
+2020-02-03 22:13:03,292 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] API Gateway is running on port 8788
+2020-02-03 22:13:03,318 INFO  [com.elevensheep.gateway.MainVerticle] started sucess
+2020-02-04 22:36:03,278 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] API Gateway is running on port 8788
+2020-02-04 22:36:03,317 INFO  [com.elevensheep.gateway.MainVerticle] started sucess
+2020-02-08 18:43:34,603 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] API Gateway is running on port 8788
+2020-02-08 18:43:34,654 INFO  [com.elevensheep.gateway.MainVerticle] started sucess
+2020-02-08 19:31:59,482 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] API Gateway is running on port 8788
+2020-02-08 19:31:59,528 INFO  [com.elevensheep.gateway.MainVerticle] started sucess
+2020-02-08 19:31:59,533 DEBUG [com.elevensheep.gateway.manage.serviceImpl.ManageServiceImpl] initializePersistence
+2020-02-08 19:33:03,307 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] API Gateway is running on port 8788
+2020-02-08 19:33:03,357 INFO  [com.elevensheep.gateway.MainVerticle] started sucess
+2020-02-08 19:33:03,388 DEBUG [com.elevensheep.gateway.manage.serviceImpl.ManageServiceImpl] initializePersistence
+2020-02-08 19:33:27,893 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] API Gateway is running on port 8788
+2020-02-08 19:33:27,940 INFO  [com.elevensheep.gateway.MainVerticle] started sucess
+2020-02-08 19:33:27,948 DEBUG [com.elevensheep.gateway.manage.serviceImpl.ManageServiceImpl] initializePersistence
+2020-02-08 19:42:16,774 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] API Gateway is running on port 8788
+2020-02-08 19:42:16,836 INFO  [com.elevensheep.gateway.MainVerticle] started sucess
+2020-02-08 19:42:16,841 DEBUG [com.elevensheep.gateway.manage.serviceImpl.ManageServiceImpl] initializePersistence
+2020-02-08 19:42:16,842 DEBUG [com.elevensheep.gateway.MainVerticle] call OK
+2020-02-08 19:43:05,329 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] API Gateway is running on port 8788
+2020-02-08 19:43:05,379 INFO  [com.elevensheep.gateway.MainVerticle] started sucess
+2020-02-08 19:43:05,385 DEBUG [com.elevensheep.gateway.manage.serviceImpl.ManageServiceImpl] initializePersistence
+2020-02-08 19:43:05,386 DEBUG [com.elevensheep.gateway.MainVerticle] call OK
+2020-02-08 19:43:48,402 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] API Gateway is running on port 8788
+2020-02-08 19:43:48,475 INFO  [com.elevensheep.gateway.MainVerticle] started sucess
+2020-02-08 19:43:48,503 DEBUG [com.elevensheep.gateway.manage.serviceImpl.ManageServiceImpl] initializePersistence
+2020-02-08 19:43:48,504 DEBUG [com.elevensheep.gateway.MainVerticle] call OK
+2020-02-08 21:45:07,396 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] API Gateway is running on port 8788
+2020-02-08 21:45:07,452 DEBUG [com.elevensheep.gateway.manage.serviceImpl.ManageServiceImpl] initializePersistence
+2020-02-08 21:45:07,467 INFO  [com.elevensheep.gateway.MainVerticle] started sucess
+2020-02-08 21:45:50,526 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] API Gateway is running on port 8788
+2020-02-08 21:45:50,580 DEBUG [com.elevensheep.gateway.manage.serviceImpl.ManageServiceImpl] initializePersistence
+2020-02-08 21:45:50,587 DEBUG [com.elevensheep.gateway.manage.ManageVerticle] API Gateway Manage is running on port 8786
+2020-02-08 21:45:50,587 INFO  [com.elevensheep.gateway.MainVerticle] started sucess
+2020-02-08 21:49:35,663 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] API Gateway is running on port 8788
+2020-02-08 21:49:35,703 DEBUG [com.elevensheep.gateway.manage.serviceImpl.ManageServiceImpl] initializePersistence
+2020-02-08 21:49:35,707 DEBUG [com.elevensheep.gateway.manage.ManageVerticle] API Gateway Manage is running on port 8786
+2020-02-08 21:49:35,707 INFO  [com.elevensheep.gateway.MainVerticle] started sucess
+2020-02-08 21:51:01,316 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] API Gateway is running on port 8788
+2020-02-08 21:51:01,375 DEBUG [com.elevensheep.gateway.manage.serviceImpl.ManageServiceImpl] initializePersistence
+2020-02-08 21:51:07,881 INFO  [com.elevensheep.gateway.MainVerticle] started sucess
+2020-02-08 21:51:07,883 DEBUG [com.elevensheep.gateway.manage.ManageVerticle] API Gateway Manage is running on port 8786
+2020-02-08 21:53:23,222 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] API Gateway is running on port 8788
+2020-02-08 21:53:23,364 DEBUG [com.elevensheep.gateway.manage.serviceImpl.ManageServiceImpl] initializePersistence
+2020-02-08 21:53:32,517 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] API Gateway is running on port 8788
+2020-02-08 21:53:32,587 DEBUG [com.elevensheep.gateway.manage.serviceImpl.ManageServiceImpl] initializePersistence
+2020-02-08 21:53:34,980 INFO  [com.elevensheep.gateway.MainVerticle] started sucess
+2020-02-08 21:53:34,985 DEBUG [com.elevensheep.gateway.manage.ManageVerticle] API Gateway Manage is running on port 8786
+2020-02-08 21:53:48,155 DEBUG [com.elevensheep.gateway.manage.serviceImpl.ManageServiceImpl] Got 2 rows 
+2020-02-08 21:53:48,157 DEBUG [com.elevensheep.gateway.manage.ManageVerticle] []
+2020-02-08 21:54:28,932 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] API Gateway is running on port 8788
+2020-02-08 21:54:28,993 DEBUG [com.elevensheep.gateway.manage.serviceImpl.ManageServiceImpl] initializePersistence
+2020-02-08 21:54:28,997 INFO  [com.elevensheep.gateway.MainVerticle] started sucess
+2020-02-08 21:54:28,998 DEBUG [com.elevensheep.gateway.manage.ManageVerticle] API Gateway Manage is running on port 8786
+2020-02-08 21:54:34,266 DEBUG [com.elevensheep.gateway.manage.ManageVerticle] getallhttpendpoint
+2020-02-08 21:54:34,437 DEBUG [com.elevensheep.gateway.manage.serviceImpl.ManageServiceImpl] Got 2 rows 
+2020-02-08 21:54:34,441 DEBUG [com.elevensheep.gateway.manage.ManageVerticle] []
+2020-02-08 21:55:22,412 DEBUG [com.elevensheep.gateway.manage.ManageVerticle] getallhttpendpoint
+2020-02-08 21:55:56,211 DEBUG [com.elevensheep.gateway.manage.serviceImpl.ManageServiceImpl] Got 2 rows 
+2020-02-08 21:56:29,025 DEBUG [com.elevensheep.gateway.manage.ManageVerticle] []
+2020-02-08 21:57:10,479 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] API Gateway is running on port 8788
+2020-02-08 21:57:10,604 DEBUG [com.elevensheep.gateway.manage.serviceImpl.ManageServiceImpl] initializePersistence
+2020-02-08 21:57:10,629 INFO  [com.elevensheep.gateway.MainVerticle] started sucess
+2020-02-08 21:57:10,638 DEBUG [com.elevensheep.gateway.manage.ManageVerticle] API Gateway Manage is running on port 8786
+2020-02-08 21:57:16,117 DEBUG [com.elevensheep.gateway.manage.ManageVerticle] getallhttpendpoint
+2020-02-08 21:57:16,246 DEBUG [com.elevensheep.gateway.manage.serviceImpl.ManageServiceImpl] Got 2 rows 
+2020-02-08 21:57:16,275 DEBUG [com.elevensheep.gateway.manage.ManageVerticle] [{"id":"1","url":"1","host":"1","userid":"1"},{"id":"2","url":"2","host":"2","userid":"2"}]
+2020-02-08 21:57:34,992 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] API Gateway is running on port 8788
+2020-02-08 21:57:35,049 DEBUG [com.elevensheep.gateway.manage.serviceImpl.ManageServiceImpl] initializePersistence
+2020-02-08 21:57:35,064 INFO  [com.elevensheep.gateway.MainVerticle] started sucess
+2020-02-08 21:57:35,066 DEBUG [com.elevensheep.gateway.manage.ManageVerticle] API Gateway Manage is running on port 8786
+2020-02-08 21:57:35,867 DEBUG [com.elevensheep.gateway.manage.ManageVerticle] getallhttpendpoint
+2020-02-08 21:57:36,069 DEBUG [com.elevensheep.gateway.manage.serviceImpl.ManageServiceImpl] Got 2 rows 
+2020-02-08 21:57:36,120 DEBUG [com.elevensheep.gateway.manage.ManageVerticle] [{"id":"1","url":"http://127.0.0.1:8888","host":"localhost","userid":"1"},{"id":"2","url":"http://127.0.0.1:8889","host":"localhost","userid":"1"}]
+2020-02-08 21:59:35,628 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] /api/test
+2020-02-08 21:59:35,712 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] test
+2020-02-08 21:59:35,712 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] 
+2020-02-08 21:59:39,310 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] http://localhost:8888
+2020-02-08 21:59:39,397 ERROR [com.elevensheep.gateway.gateway.GatewayVerticle] failerio.vertx.circuitbreaker.TimeoutException: operation timeout
+2020-02-08 22:00:24,508 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] /api/testsdf
+2020-02-08 22:00:24,509 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] testsdf
+2020-02-08 22:00:24,509 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] 
+2020-02-08 22:00:24,509 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] http://localhost:8888
+2020-02-08 22:00:28,390 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] /api/
+2020-02-08 22:00:28,390 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] 
+2020-02-08 22:00:28,390 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] 
+2020-02-08 22:00:28,390 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] http://localhost:8888
+2020-02-08 22:09:03,139 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] API Gateway is running on port 8788
+2020-02-08 22:09:03,213 DEBUG [com.elevensheep.gateway.manage.serviceImpl.ManageServiceImpl] initializePersistence
+2020-02-08 22:09:03,221 DEBUG [com.elevensheep.gateway.manage.ManageVerticle] API Gateway Manage is running on port 8786
+2020-02-08 22:09:03,222 INFO  [com.elevensheep.gateway.MainVerticle] started sucess
+2020-02-08 22:09:35,410 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] /api/
+2020-02-08 22:09:35,428 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] 
+2020-02-08 22:09:35,428 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] 
+2020-02-08 22:09:35,428 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] http://localhost:8888
+2020-02-08 22:15:13,409 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] API Gateway is running on port 8788
+2020-02-08 22:15:13,464 DEBUG [com.elevensheep.gateway.manage.serviceImpl.ManageServiceImpl] initializePersistence
+2020-02-08 22:15:13,479 INFO  [com.elevensheep.gateway.MainVerticle] started sucess
+2020-02-08 22:15:13,479 DEBUG [com.elevensheep.gateway.manage.ManageVerticle] API Gateway Manage is running on port 8786
+2020-02-08 22:15:26,652 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] /api/234
+2020-02-08 22:15:26,652 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] /api/234
+2020-02-08 22:15:26,663 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] 234
+2020-02-08 22:15:26,664 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] 
+2020-02-08 22:15:26,664 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] http://localhost:8888
+2020-02-08 22:19:47,706 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] /api/234
+2020-02-08 22:19:47,706 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] /api/234?dxx=234
+2020-02-08 22:19:47,706 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] 234
+2020-02-08 22:19:47,707 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] 
+2020-02-08 22:19:47,707 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] http://localhost:8888
+2020-02-08 22:27:22,002 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] API Gateway is running on port 8788
+2020-02-08 22:27:22,051 DEBUG [com.elevensheep.gateway.manage.serviceImpl.ManageServiceImpl] initializePersistence
+2020-02-08 22:27:22,056 DEBUG [com.elevensheep.gateway.manage.ManageVerticle] API Gateway Manage is running on port 8786
+2020-02-08 22:27:22,056 INFO  [com.elevensheep.gateway.MainVerticle] started sucess
+2020-02-08 22:28:08,668 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] /api/234?dxx=234
+2020-02-08 22:28:08,678 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] 234?dxx=234
+2020-02-08 22:28:08,678 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] 
+2020-02-08 22:28:10,683 ERROR [com.elevensheep.gateway.gateway.GatewayVerticle] failerio.vertx.circuitbreaker.TimeoutException: operation timeout
+2020-02-08 22:30:43,151 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] API Gateway is running on port 8788
+2020-02-08 22:30:43,227 DEBUG [com.elevensheep.gateway.manage.serviceImpl.ManageServiceImpl] initializePersistence
+2020-02-08 22:30:43,236 DEBUG [com.elevensheep.gateway.manage.ManageVerticle] API Gateway Manage is running on port 8786
+2020-02-08 22:30:43,236 INFO  [com.elevensheep.gateway.MainVerticle] started sucess
+2020-02-08 22:30:50,333 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] /api/test1
+2020-02-08 22:30:50,338 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] test1
+2020-02-08 22:30:50,339 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] 
+2020-02-08 22:30:52,349 ERROR [com.elevensheep.gateway.gateway.GatewayVerticle] failerio.vertx.circuitbreaker.TimeoutException: operation timeout
+2020-02-08 22:32:27,486 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] API Gateway is running on port 8788
+2020-02-08 22:32:27,556 DEBUG [com.elevensheep.gateway.manage.serviceImpl.ManageServiceImpl] initializePersistence
+2020-02-08 22:32:27,580 INFO  [com.elevensheep.gateway.MainVerticle] started sucess
+2020-02-08 22:32:27,584 DEBUG [com.elevensheep.gateway.manage.ManageVerticle] API Gateway Manage is running on port 8786
+2020-02-08 22:32:32,494 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] /api/test1
+2020-02-08 22:32:32,500 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] test1
+2020-02-08 22:32:32,500 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] 
+2020-02-08 22:32:34,506 ERROR [com.elevensheep.gateway.gateway.GatewayVerticle] failerio.vertx.circuitbreaker.TimeoutException: operation timeout
+2020-02-08 22:33:35,115 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] API Gateway is running on port 8788
+2020-02-08 22:33:35,172 DEBUG [com.elevensheep.gateway.manage.serviceImpl.ManageServiceImpl] initializePersistence
+2020-02-08 22:33:35,178 INFO  [com.elevensheep.gateway.MainVerticle] started sucess
+2020-02-08 22:33:35,178 DEBUG [com.elevensheep.gateway.manage.ManageVerticle] API Gateway Manage is running on port 8786
+2020-02-08 22:38:03,433 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] API Gateway is running on port 8788
+2020-02-08 22:38:03,482 DEBUG [com.elevensheep.gateway.manage.serviceImpl.ManageServiceImpl] initializePersistence
+2020-02-08 22:38:03,492 INFO  [com.elevensheep.gateway.MainVerticle] started sucess
+2020-02-08 22:38:03,497 DEBUG [com.elevensheep.gateway.manage.ManageVerticle] API Gateway Manage is running on port 8786
+2020-02-08 22:38:11,490 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] dispatch/api/test1
+2020-02-08 22:38:11,499 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] test1
+2020-02-08 22:38:11,499 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] 
+2020-02-08 22:38:11,521 DEBUG [com.elevensheep.gateway.manage.serviceImpl.ManageServiceImpl] retrieveManage
+2020-02-08 22:38:11,670 DEBUG [com.elevensheep.gateway.manage.serviceImpl.ManageServiceImpl] Got 1 rows 
+2020-02-08 22:38:11,691 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] 1
+2020-02-08 22:38:13,504 ERROR [com.elevensheep.gateway.gateway.GatewayVerticle] failerio.vertx.circuitbreaker.TimeoutException: operation timeout
+2020-02-08 22:38:43,727 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] API Gateway is running on port 8788
+2020-02-08 22:38:43,775 DEBUG [com.elevensheep.gateway.manage.serviceImpl.ManageServiceImpl] initializePersistence
+2020-02-08 22:38:43,786 INFO  [com.elevensheep.gateway.MainVerticle] started sucess
+2020-02-08 22:38:43,786 DEBUG [com.elevensheep.gateway.manage.ManageVerticle] API Gateway Manage is running on port 8786
+2020-02-08 22:38:47,463 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] dispatch/api/test1
+2020-02-08 22:38:47,474 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] test1
+2020-02-08 22:38:47,475 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] 
+2020-02-08 22:38:47,494 DEBUG [com.elevensheep.gateway.manage.serviceImpl.ManageServiceImpl] retrieveManage
+2020-02-08 22:38:47,624 DEBUG [com.elevensheep.gateway.manage.serviceImpl.ManageServiceImpl] Got 1 rows 
+2020-02-08 22:38:47,627 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] http://127.0.0.1:8888
+2020-02-08 22:38:51,006 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] dispatch/api/test2
+2020-02-08 22:38:51,006 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] test2
+2020-02-08 22:38:51,007 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] 
+2020-02-08 22:38:51,008 DEBUG [com.elevensheep.gateway.manage.serviceImpl.ManageServiceImpl] retrieveManage
+2020-02-08 22:38:51,018 DEBUG [com.elevensheep.gateway.manage.serviceImpl.ManageServiceImpl] Got 1 rows 
+2020-02-08 22:38:51,021 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] http://127.0.0.1:8889
+2020-02-08 22:39:10,752 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] API Gateway is running on port 8788
+2020-02-08 22:39:10,821 DEBUG [com.elevensheep.gateway.manage.serviceImpl.ManageServiceImpl] initializePersistence
+2020-02-08 22:39:10,828 INFO  [com.elevensheep.gateway.MainVerticle] started sucess
+2020-02-08 22:39:10,828 DEBUG [com.elevensheep.gateway.manage.ManageVerticle] API Gateway Manage is running on port 8786
+2020-02-08 22:39:14,020 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] dispatch/api/test2
+2020-02-08 22:39:14,036 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] test2
+2020-02-08 22:39:14,051 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] 
+2020-02-08 22:39:14,083 DEBUG [com.elevensheep.gateway.manage.serviceImpl.ManageServiceImpl] retrieveManage
+2020-02-08 22:39:14,181 DEBUG [com.elevensheep.gateway.manage.serviceImpl.ManageServiceImpl] Got 1 rows 
+2020-02-08 22:39:14,184 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] http://127.0.0.1:8889
+2020-02-08 22:39:17,288 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] dispatch/api/test1
+2020-02-08 22:39:17,288 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] test1
+2020-02-08 22:39:17,289 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] 
+2020-02-08 22:39:17,290 DEBUG [com.elevensheep.gateway.manage.serviceImpl.ManageServiceImpl] retrieveManage
+2020-02-08 22:39:17,307 DEBUG [com.elevensheep.gateway.manage.serviceImpl.ManageServiceImpl] Got 1 rows 
+2020-02-08 22:39:17,308 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] http://127.0.0.1:8888
+2020-02-08 22:40:16,081 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] API Gateway is running on port 8788
+2020-02-08 22:40:16,113 DEBUG [com.elevensheep.gateway.manage.serviceImpl.ManageServiceImpl] initializePersistence
+2020-02-08 22:40:16,123 DEBUG [com.elevensheep.gateway.manage.ManageVerticle] API Gateway Manage is running on port 8786
+2020-02-08 22:40:16,123 INFO  [com.elevensheep.gateway.MainVerticle] started sucess
+2020-02-11 23:03:45,160 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] API Gateway is running on port 8788
+2020-02-11 23:03:45,198 DEBUG [com.elevensheep.gateway.manage.serviceImpl.ManageServiceImpl] initializePersistence
+2020-02-11 23:03:45,205 INFO  [com.elevensheep.gateway.MainVerticle] started sucess
+2020-02-11 23:03:45,205 DEBUG [com.elevensheep.gateway.manage.ManageVerticle] API Gateway Manage is running on port 8786
+2020-02-12 22:47:35,295 DEBUG [com.elevensheep.gateway.gateway.GatewayVerticle] API Gateway is running on port 8788
+2020-02-12 22:47:35,295 DEBUG [com.elevensheep.gateway.MainVerticle] [Lorg.apache.logging.log4j.core.Filter$Result;@2bdde394
+2020-02-12 22:47:35,402 DEBUG [com.elevensheep.gateway.manage.serviceImpl.ManageServiceImpl] initializePersistence
+2020-02-12 22:47:35,430 INFO  [com.elevensheep.gateway.MainVerticle] started sucess
+2020-02-12 22:47:35,453 DEBUG [com.elevensheep.gateway.manage.ManageVerticle] API Gateway Manage is running on port 8786

@@ -1,5 +1,11 @@
 package com.elevensheep.gateway.manage.service;
 
+import com.elevensheep.gateway.manage.service.HttpEndPointConverter;
+
+import io.vertx.codegen.annotations.DataObject;
+import io.vertx.core.json.JsonObject;
+
+@DataObject(generateConverter = true)
 public class HttpEndPoint {
 
     //host
@@ -16,6 +22,24 @@ public class HttpEndPoint {
 
     //config key
     private String configId;
+
+    //weight
+    private Integer weight;
+
+
+    public HttpEndPoint() {
+    
+    }
+
+    public HttpEndPoint( JsonObject json){
+        HttpEndPointConverter.fromJson(json, this);
+    }
+
+    public JsonObject toJson(){
+        JsonObject json = new JsonObject();
+        HttpEndPointConverter.toJson(this, json);
+        return json;
+    }
 
 
 	public String getHost() {
@@ -56,9 +80,14 @@ public class HttpEndPoint {
 
 	public void setConfigId(String configId) {
 		this.configId = configId;
+    }
+    
+    public Integer getWeight() {
+		return weight;
 	}
 
-	public HttpEndPoint() {
+	public void setWeight(Integer weight) {
+		this.weight = weight;
 	}
 
 }

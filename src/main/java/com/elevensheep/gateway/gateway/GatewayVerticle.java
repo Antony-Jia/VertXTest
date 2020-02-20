@@ -1,9 +1,16 @@
 package com.elevensheep.gateway.gateway;
 
+import java.util.HashMap;
+import java.util.Map;
+
+import com.elevensheep.gateway.loadbalance.LoadBalance;
 import com.elevensheep.gateway.manage.service.ManageService;
 import io.vertx.circuitbreaker.CircuitBreaker;
 import io.vertx.circuitbreaker.CircuitBreakerOptions;
 import io.vertx.core.AbstractVerticle;
+import io.vertx.core.AsyncResult;
+import io.vertx.core.Future;
+import io.vertx.core.Handler;
 import io.vertx.core.Promise;
 import io.vertx.core.http.HttpClient;
 import io.vertx.core.http.HttpClientRequest;
@@ -29,6 +36,9 @@ public class GatewayVerticle extends AbstractVerticle {
     private CircuitBreaker circuitBreaker;
     private HttpClient httpclient;
     private ManageService service;
+
+    private Map<String, LoadBalance> loadBalanceStrategy = new HashMap<>();
+
     @Override
     public void start(Promise<Void> startPromise) throws Exception {
         super.start();
@@ -88,14 +98,10 @@ public class GatewayVerticle extends AbstractVerticle {
 
     private void dispatchRequests(RoutingContext context) {
         int initialOffset = 5; // length of '/api'
-
         String path = context.request().uri();
         logger.debug("dispatch" + path);
         circuitBreaker.execute(future -> {
             String prefix = (path.substring(initialOffset).split("/"))[0];
-            String newPath = path.substring(initialOffset + prefix.length());
-            logger.debug(prefix);
-            logger.debug(newPath);
             this.service.retrieveManage(prefix, resultHandler->{
                 if(resultHandler.succeeded()){
                     JsonArray jsonArray = resultHandler.result();
@@ -104,10 +110,7 @@ public class GatewayVerticle extends AbstractVerticle {
                 else{
                     future.fail("not found");
                 }
-
             });
-            
-
         }).setHandler(ar -> {
             if (ar.failed()) {
                 logger.error("failer" + ar.cause());
@@ -117,19 +120,18 @@ public class GatewayVerticle extends AbstractVerticle {
                                 .encodePrettily());
             }
         });
-
     }
 
     private void doDispatch(RoutingContext context, String path, HttpClient client, Promise<Object> cbFuture) {
 
         // requestOptions.setURI(uri)
-        logger.debug(path);
+        logger.debug("dispatch path is " + path);
         HttpClientRequest toReq = client.requestAbs(context.request().method(), path, response -> {
             HttpClientResponse httpClientResponse = response.result();
             if (response.succeeded()) {
                 httpClientResponse.bodyHandler(body -> {
                     if (httpClientResponse.statusCode() >= 500) {
-                        cbFuture.fail("");
+                        cbFuture.fail("get service failed " + path);
                     } else {
                         HttpServerResponse toRsp = context.response().setStatusCode(httpClientResponse.statusCode());
                         httpClientResponse.headers().forEach(header -> {
@@ -158,37 +160,20 @@ public class GatewayVerticle extends AbstractVerticle {
         }
     }
 
-    // HttpClientRequest toReq = client.request(context.request().method(), path,
-    // response -> { // (1)
-    // response.bodyHandler(body -> {
-    // if (response.statusCode() >= 500) { // (4) api endpoint server error, circuit
-    // breaker should fail
-    // cbFuture.fail(response.statusCode() + ": " + body.toString());
-    // } else {
-    // HttpServerResponse toRsp = context.response()
-    // .setStatusCode(response.statusCode()); // (5)
-    // response.headers().forEach(header -> {
-    // toRsp.putHeader(header.getKey(), header.getValue());
-    // });
-    // // send response
-    // toRsp.end(body); // (6)
-    // cbFuture.fail()// (7)
-    // }
-    // });
-    // });
-    // // set headers
-    // context.request().headers().forEach(header -> { // (2)
-    // toReq.putHeader(header.getKey(), header.getValue());
-    // });
-    // if (context.user() != null) {
-    // toReq.putHeader("user-principal", context.user().principal().encode());
-    // }
-    // // send request
-    // if (context.getBody() == null) { // (3)
-    // toReq.end();
-    // } else {
-    // toReq.end(context.getBody());
-    // }
-    // }
-
+    private void getLink(String name, Handler<AsyncResult<String>> resultHandler){
+        this.service.retrieveManage(name, hander->{
+            if(hander.succeeded()){
+                JsonArray jsonArray = hander.result();
+                LoadBalance lb = loadBalanceStrategy.get(name);
+                if(null == lb){
+                    lb = new LoadBalance(name);
+                }
+                String url = lb.getUrl(jsonArray);
+                resultHandler.handle(Future.succeededFuture(url));
+            }else{
+                resultHandler.handle(Future.failedFuture("retrieve url failed"));
+            }
+        });
+        return;
+    }
 }

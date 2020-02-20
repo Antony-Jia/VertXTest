@@ -70,6 +70,6 @@ public class GraphqlVerticle extends AbstractVerticle{
     List<String> result = links.stream()
         .filter(link -> !secureOnly)
         .collect(toList());
-    future.complete(result);
+        future.complete(result);
     }
 }

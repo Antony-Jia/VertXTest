@@ -39,6 +39,8 @@ public interface ManageService {
     @Fluent
     public ManageService retrieveManage(String name, Handler<AsyncResult<JsonArray>> resultHandler);
 
+
+
     @Fluent
     public ManageService retrieveAllManage(Handler<AsyncResult<JsonArray>> resultHandler);
 

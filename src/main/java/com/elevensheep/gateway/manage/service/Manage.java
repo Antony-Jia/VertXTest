@@ -11,7 +11,6 @@ public class Manage {
     private String Id;
     private String host;
     private String url;
-    private String userId;
 
     public Manage() {
         // Empty constructor
@@ -25,7 +24,6 @@ public class Manage {
         this.Id = other.Id;
         this.host = other.host;
         this.url = other.url;
-        this.userId = other.userId;
     }
 
     public JsonObject toJson() {
@@ -65,15 +63,6 @@ public class Manage {
 
     public Manage seturl(String url) {
         this.url = url;
-        return this;
-    }
-
-    public String getuserId() {
-        return userId;
-    }
-
-    public Manage setuserId(String userId) {
-        this.userId = userId;
         return this;
     }
 

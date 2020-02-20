@@ -40,6 +40,7 @@ public class ManageServiceImpl implements ManageService {
         return this;
     }
 
+
     @Override
     public ManageService retrieveManage(String name, Handler<AsyncResult<JsonArray>> resultHandler) {
         logger.debug("retrieveManage");
